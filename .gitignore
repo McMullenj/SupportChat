@@ -1,1 +1,3 @@
 environments.env
+# Local Netlify folder
+.netlify

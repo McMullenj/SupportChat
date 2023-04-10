@@ -15,3 +15,8 @@ npm install cors
 # Set API Key
 
 export REACT_APP_API_KEY=your_api_key_here
+
+Upload to Netlify by:
+
+1. run "npm run build"
+2. upload build folder into netlify
