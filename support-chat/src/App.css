@@ -106,14 +106,14 @@ button {
   justify-content: center;
   background-color: #0099ff;
   z-index: 9999;
-  animation: fadeOut 3s ease-in-out 1s forwards;
+  animation: fadeOut 1s ease-in-out 1s forwards;
 }
 
 .splash-logo {
   font-size: 48px;
   color: #ffffff;
   text-align: center;
-  animation: fadeOut 3s ease-in-out 1s forwards;
+  animation: fadeOut 1s ease-in-out 1s forwards;
 }
 
 @keyframes fadeOut {

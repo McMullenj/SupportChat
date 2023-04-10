@@ -1,5 +1,5 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
-
+//const config = require("./config.json");
 module.exports = function (app) {
   app.use(
     "/api/gpt3",
@@ -11,7 +11,7 @@ module.exports = function (app) {
       },
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`, //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`,
       },
     })
   );

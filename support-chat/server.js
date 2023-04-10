@@ -1,6 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
+//const config = require("./config.json");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,7 +17,7 @@ app.post("/api/gpt3", async (req, res) => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
+          Authorization: `Bearer ${process.env.API_KEY}`, //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`, //${config.API_KEY}`,
         },
       }
     );
