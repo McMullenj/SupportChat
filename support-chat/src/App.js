@@ -88,11 +88,11 @@ function App() {
         {messages.map((msg, index) => (
           <div
             key={index}
-            className={msg.role === "user" ? "user-message" : "gpt-message"}
+            className={msg.role === "user" ? "user-message" : "system-message"}
           >
             <div
               className={`message-content ${
-                msg.role === "user" ? "user" : "gpt"
+                msg.role === "user" ? "user" : "system"
               }`}
             >
               {msg.content}

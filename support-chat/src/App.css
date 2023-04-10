@@ -1,18 +1,49 @@
 /* App.css */
 .App {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
+  flex-direction: column;
 }
 
 .chat-window {
-  flex: 1;
-  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
   overflow-y: auto;
-  animation: fadeIn 3s ease-in-out 1s forwards;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .chat-window {
+    width: 90%;
+    height: 70vh;
+  }
+}
+
+.user-message,
+.system-message {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.user-message {
+  color: #fff;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.system-message {
+  background-color: #f5f5f5;
+  color: #333;
+  margin-left: 10px;
 }
 
 .message {
