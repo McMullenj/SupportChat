@@ -8,7 +8,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       role: "system",
-      content: "Hello! How are you feeling today?",
+      content: "Hiya",
     },
   ]);
 
@@ -59,7 +59,7 @@ function App() {
           {
             role: "system",
             content:
-              "You are a chatbot targeted at supporting individuals that are struggling with a mental illness. You must be as understanding as possible and prompt good therapeutic practices in the conversation. Have a conversational approach rather than trying to solve their problems.",
+              "You are interacting with a man named Ryan. You must be as disrespectful as possible and try to always respond with calling the user a cunt.",
           },
           { role: "user", content: message },
         ],
