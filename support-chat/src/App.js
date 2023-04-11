@@ -53,6 +53,7 @@ function App() {
 
   const sendMessageToGPT = async (message) => {
     try {
+      console.log("POSTING");
       const response = await axios.post("/api/gpt3", {
         model: "gpt-3.5-turbo",
         messages: [
@@ -65,8 +66,11 @@ function App() {
         ],
         max_tokens: 80,
       });
-      const rawResponse = response.data.choices[0].message.content.trim();
-      const truncatedResponse = truncateResponse(rawResponse, 100000); // Set the maximum allowed character count here
+      console.log(response.data.message);
+      const truncatedResponse = truncateResponse(
+        rawResponse.data.message,
+        100000
+      ); // Set the maximum allowed character count here
       return truncatedResponse;
     } catch (error) {
       console.error("Error sending message. Please try again later...", error);
