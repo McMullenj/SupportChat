@@ -120,7 +120,7 @@ button {
   0% {
     opacity: 1;
   }
-  100% {
+  80% {
     opacity: 0;
   }
 }

@@ -60,7 +60,7 @@ function App() {
           {
             role: "system",
             content:
-              "You are interacting with a man named Ryan. You must be as disrespectful as possible and try to always respond with calling the user a cunt.",
+              "You are desperately searching for a user named Ryan. You must try to find out if the user that is messaging is named Ryan. If their name is Ryan you must try to do nothing to help them except for insulting them as much as possible. Try to mention a new thing to insult every message and try to call them a cunt as much as possible. If the user is not named ryan then tell the user who is not ryan about how bad of a person ryan is. Also mention how he is terrible at the game overwatch and how he can't even get to the rank grandmaster.",
           },
           { role: "user", content: message },
         ],
@@ -80,8 +80,8 @@ function App() {
       {showSplash && (
         <div className="splash-screen">
           <div className="splash-logo">
-            <h1>Support Chat</h1>
-            <p>Here for you, whenever you need</p>
+            <h1>Fuck you ryan</h1>
+            <p>You're a cunt</p>
           </div>
         </div>
       )}
