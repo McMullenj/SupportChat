@@ -67,10 +67,7 @@ function App() {
         max_tokens: 80,
       });
       console.log(response.data.message);
-      const truncatedResponse = truncateResponse(
-        rawResponse.data.message,
-        100000
-      ); // Set the maximum allowed character count here
+      const truncatedResponse = truncateResponse(response.data.message, 100000); // Set the maximum allowed character count here
       return truncatedResponse;
     } catch (error) {
       console.error("Error sending message. Please try again later...", error);
